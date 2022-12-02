@@ -730,6 +730,10 @@ h2 {
   font-size: 32px;
   color: #087f5b;
 }
+#contact .h3-hover {
+  text-decoration: none;
+  color: #495057;
+}
 #contact .h3-hover:hover {
   color: #12b886;
   cursor: grab;
@@ -800,13 +804,12 @@ box-shadow: 0px 0px 5px 0 #0000002c;
   color: #D4E3DD;
   font-size: 54px;
 }
-#footer h2 {
+#footer .footer h2 {
   color: #D4E3DD;
   font-weight: 500;
   font-size: 1.8rem;
   letter-spacing: .1rem;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin: auto;
 }
 #footer p{
   color: #D4E3DD;
@@ -867,6 +870,12 @@ box-shadow: 0px 0px 5px 0 #0000002c;
   }
   #main-header .main-header .main-header-text-box .main-header-h1 {
     font-size: 40px;
+  }
+  .school-h2 {
+    font-size: 40px;
+  }
+  #contact .contact-section-title {
+    font-size: 50px;
   }
   #contact .contact-container {
     flex-direction: column;
