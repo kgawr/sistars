@@ -65,6 +65,7 @@ body {
   top: 0 ;
   width: 100%;
   z-index: 3;
+  opacity: 0.9;
 }
 
 .header ul {
@@ -97,7 +98,6 @@ body {
   padding: 10px 20px;
   text-decoration: none;
   color: #087f5b;
-
 }
 
 /* menu */
@@ -118,6 +118,7 @@ body {
   position: relative;
   user-select: none;
   color: #087f5b;
+  transition: all .2s ease-out;
 }
 
 .header .menu-icon .navicon {
@@ -638,6 +639,24 @@ h2 {
   .news-hr {
     width: 80%;
     margin: auto;
+  }
+  .material-drama {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .material-euroweek {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  iframe {
+    padding-bottom: 20px;
+    padding-right: 20px;
   }
 /*         */
 /* GALLERY */
