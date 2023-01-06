@@ -307,6 +307,53 @@ h2 {
   margin-top: 30px;
 }
 
+/* OFFER */
+.offer-main {
+  padding: 50px 50px;
+  width: 100%;
+  margin: auto;
+  background-color: #087f5b;
+  color: #fff;
+}
+.offer-header-h1 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 50px;
+  /* 44 / 52 / 62 */
+  line-height: 1.1;
+  letter-spacing: 1.5;
+}
+.offer-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+.offer-text-box1 {
+  width: 50%;
+}
+.offer-text-box2 {
+  width: 50%;
+}
+.arrow-down {
+  color: #fff;
+  font-size: 35px;
+}
+.sub2 {
+  font-size: 32px;
+}
+.main-header-text-offer {
+  padding-top: 30px;
+  font-size: 24px;
+  line-height: 2;
+  letter-spacing: 2;
+}
+.main-header-text-offer2 {
+  padding-top: 55px;
+  font-size: 24px;
+  letter-spacing: 2;
+  line-height: 2;
+}
+/* END OF OFFER */
 
 /* FEATURES */
 #school {
