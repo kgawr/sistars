@@ -73,3 +73,19 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+
+const hiddenElements = document.querySelector('.main-header-text-offer');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+
+hiddenElements.forEach((el) => observer.observe(el));
