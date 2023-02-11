@@ -651,7 +651,7 @@ opacity: 1;
 
 /* End of Parallax 3 */
 
-/* News Section */
+/* Projects Section */
 #news {
   padding-top: 50px;
   
@@ -662,6 +662,12 @@ opacity: 1;
   padding-bottom: 50px;
   }
   .news2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  }
+  .news3 {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
@@ -685,9 +691,17 @@ opacity: 1;
   }
   .news-text {
     width: 50%;
-    text-align: center;
+    text-align: justify;
     margin: auto;
     padding-bottom: 30px;
+    line-height: 1.8;
+    letter-spacing: 1.5;
+  }
+  .drama-details {
+    text-align: center;
+    line-height: 1.8;
+    letter-spacing: 1.5;
+    padding-bottom: 40px;
   }
   .news-img {
     margin: auto;
@@ -710,6 +724,12 @@ opacity: 1;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .euroweek-poster {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
   }
   iframe {
     padding-bottom: 20px;
