@@ -354,6 +354,7 @@ h2 {
 }
 .offer-text-box2 {
   width: 400px;
+  padding-bottom: 50px;
 }
 .arrow-down {
   color: #fff;
@@ -372,6 +373,7 @@ h2 {
   letter-spacing: 2;
 }
 .main-header-text-offer2 {
+  color: #D4E3DD;
   padding-top: 50px;
   font-size: 24px;
   letter-spacing: 2;
@@ -389,6 +391,7 @@ opacity: 1;
   padding-bottom: 100px;
 }
 .school-h2 {
+  width: 90%;
   margin: auto;
   padding-top: 15px;
   padding-bottom: 24px;
@@ -421,10 +424,98 @@ opacity: 1;
 }
 
 .features-text {
+  width: 90%;
   text-align: justify;
   font-size: 18px;
   line-height: 1.7;
 }
+
+/* Projects Section */
+#news {
+  padding-top: 50px;
+  
+  }
+  .news1 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  }
+  .news2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  }
+  .news3 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  }
+  .news-h1 {
+    color: #087f5b;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin: auto;
+    /* 24 30 36 */
+    font-size: 62px;
+    letter-spacing: -0.5px;
+  }
+  .news-column-header {
+    text-align: center;
+    font-size: 34px;
+    color: #087f5b;
+    padding-bottom: 30px;
+  }
+  .news-text {
+    width: 50%;
+    text-align: justify;
+    margin: auto;
+    padding-bottom: 30px;
+    line-height: 1.8;
+    letter-spacing: 1.5;
+  }
+  .drama-details {
+    text-align: center;
+    line-height: 1.8;
+    letter-spacing: 1.5;
+    padding-bottom: 40px;
+  }
+  .news-img {
+    margin: auto;
+    width: 30%;
+  }
+  .news-hr {
+    width: 80%;
+    margin: auto;
+  }
+  .material-drama {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .material-euroweek {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .euroweek-poster {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  iframe {
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+/* End of Projects Section */
+
 
 /* Parallax 2 */
 
@@ -668,90 +759,7 @@ opacity: 1;
 
 /* End of Parallax 3 */
 
-/* Projects Section */
-#news {
-  padding-top: 50px;
-  
-  }
-  .news1 {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 50px;
-  }
-  .news2 {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 50px;
-  }
-  .news3 {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 50px;
-  }
-  .news-h1 {
-    color: #087f5b;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    margin: auto;
-    /* 24 30 36 */
-    font-size: 62px;
-    letter-spacing: -0.5px;
-  }
-  .news-column-header {
-    text-align: center;
-    font-size: 34px;
-    color: #087f5b;
-    padding-bottom: 30px;
-  }
-  .news-text {
-    width: 50%;
-    text-align: justify;
-    margin: auto;
-    padding-bottom: 30px;
-    line-height: 1.8;
-    letter-spacing: 1.5;
-  }
-  .drama-details {
-    text-align: center;
-    line-height: 1.8;
-    letter-spacing: 1.5;
-    padding-bottom: 40px;
-  }
-  .news-img {
-    margin: auto;
-    width: 30%;
-  }
-  .news-hr {
-    width: 80%;
-    margin: auto;
-  }
-  .material-drama {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .material-euroweek {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .euroweek-poster {
-    width: 50%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-  }
-  iframe {
-    padding-bottom: 20px;
-    padding-right: 20px;
-  }
+
 /*         */
 /* GALLERY */
 /*         */
@@ -1043,6 +1051,9 @@ box-shadow: 0px 0px 5px 0 #0000002c;
     margin-top: 30px;
     margin-bottom: 60px;
   }
+  .news-text {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -1073,6 +1084,18 @@ box-shadow: 0px 0px 5px 0 #0000002c;
   .icon-bar a {
     font-size: 16px;
     padding: 12px;
+  }
+  .news-text {
+    width: 90%;
+  }
+  .main-header-text-offer {
+    font-size: 24px;
+  }
+  .main-header-text-offer2 {
+    font-size: 18px;
+  }
+  .offer-header-h1 {
+    font-size: 36px;
   }
 }
 @media only screen and (min-width : 768px) {
