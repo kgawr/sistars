@@ -1,3 +1,11 @@
+const popupOverlay = document.querySelector(".popup-overlay");
+const skipButton = document.querySelector(".popup-container .skip-button");
+
+skipButton.addEventListener("click", () => {
+  popupOverlay.classList.add("active");
+});
+
+
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.nav-bar .nav-list ul li a');
@@ -107,3 +115,6 @@ const observer = new IntersectionObserver((entries) => {
 
 
 hiddenElements.forEach((el) => observer.observe(el));
+
+
+
