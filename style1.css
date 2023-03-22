@@ -409,6 +409,7 @@ opacity: 1;
   }
 .feature {
   padding-top: 30px;
+  padding-left: 20px;
   width: 360px;
 }
 .features-icon {
@@ -452,15 +453,16 @@ opacity: 1;
   padding-top: 20px;
   padding-bottom: 50px;
   }
-  .news-h1 {
-    color: #087f5b;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    margin: auto;
-    /* 24 30 36 */
-    font-size: 62px;
-    letter-spacing: -0.5px;
+  .news-h2 {
+  width: 90%;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 44px;
+  font-size: 50px;
+  /* 44 / 52 / 62 */
+  line-height: 1.1;
+  letter-spacing: 1.5;
+  color: #087f5b;
   }
   .news-column-header {
     text-align: center;
@@ -1022,7 +1024,7 @@ box-shadow: 0px 0px 5px 0 #0000002c;
   transition: all 700ms ease;
 }
 .popup-overlay.active {
-  opacity: 0;
+  display: none;
 }
 .popup-container {
   display: flex;
@@ -1078,6 +1080,9 @@ box-shadow: 0px 0px 5px 0 #0000002c;
     font-size: 40px;
   }
   .school-h2 {
+    font-size: 40px;
+  }
+  .news-h2 {
     font-size: 40px;
   }
   #contact .contact-section-title {

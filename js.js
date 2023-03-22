@@ -1,8 +1,11 @@
 const popupOverlay = document.querySelector(".popup-overlay");
+const popupContainer = document.querySelector(".popup-container")
 const skipButton = document.querySelector(".popup-container .skip-button");
 
 skipButton.addEventListener("click", () => {
-  popupOverlay.classList.add("active");
+  popupOverlay.classList.add("active"),
+  popupContainer.classList.add("active");
+
 });
 
 
