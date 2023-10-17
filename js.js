@@ -5,8 +5,13 @@ const skipButton = document.querySelector(".popup-container .skip-button");
 skipButton.addEventListener("click", () => {
   popupOverlay.classList.add("active"),
   popupContainer.classList.add("active");
+})
 
-});
+function closePopup() {
+  var popup = document.getElementById("popup-overlay");
+  popup.style.display = "none";
+}
+document.getElementById("popup-overlay").addEventListener("click", closePopup);
 
 
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
