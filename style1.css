@@ -506,11 +506,19 @@ opacity: 1;
     justify-content: center;
     flex-wrap: wrap;
   }
+  .euroweek-posters {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
   .euroweek-poster {
+    scale: 0.8;
     width: 50%;
     margin: auto;
     display: flex;
     justify-content: center;
+    padding: 10px;
   }
   iframe {
     padding-bottom: 20px;
@@ -736,7 +744,7 @@ opacity: 1;
 /* Parallax 3 */
 
 #parallax3 {
-  background: url("./img/pexels-pixabay-301920-min.jpg") repeat fixed 100%;
+  background: url("./img/aiimage1.jpg") repeat fixed 100%;
   background-size: cover;
   background-position: center;
   width: 100%;
