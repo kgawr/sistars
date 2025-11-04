@@ -1,128 +1,108 @@
+// === POPUP ===
 const popupOverlay = document.querySelector(".popup-overlay");
-const popupContainer = document.querySelector(".popup-container")
+const popupContainer = document.querySelector(".popup-container");
 const skipButton = document.querySelector(".popup-container .skip-button");
 
-skipButton.addEventListener("click", () => {
-  popupOverlay.classList.add("active"),
-  popupContainer.classList.add("active");
-})
+if (skipButton) {
+  skipButton.addEventListener("click", () => {
+    popupOverlay.classList.add("active");
+    popupContainer.classList.add("active");
+  });
+}
 
 function closePopup() {
-  var popup = document.getElementById("popup-overlay");
-  popup.style.display = "none";
+  popupOverlay.style.display = "none";
 }
-document.getElementById("popup-overlay").addEventListener("click", closePopup);
+if (popupOverlay) popupOverlay.addEventListener("click", closePopup);
 
+// === HAMBURGER MENU ===
+const hamburger = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('#header .nav-list ul');
+const menuItems = document.querySelectorAll('#header .nav-list ul li a');
 
-const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
-const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
-const menu_item = document.querySelectorAll('.nav-bar .nav-list ul li a');
-const header = document.querySelector('.header.container');
+if (hamburger && mobileMenu) {
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  });
 
-hamburger.addEventListener('click', () => {
-hamburger.classList.toggle('active');
-mobile_menu.classList.toggle('active');
-});
+  menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('active');
+    });
+  });
+}
 
-menu_item.forEach((item) => {
-item.addEventListener('click', () => {
-hamburger.classList.toggle('active');
-mobile_menu.classList.toggle('active'); 
-});
-});
+// === READ MORE BUTTONS ===
+function toggleReadMore(dotsId, moreId, btnId) {
+  const dots = document.getElementById(dotsId);
+  const moreText = document.getElementById(moreId);
+  const btnText = document.getElementById(btnId);
 
+  if (!dots || !moreText || !btnText) return;
 
-function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more"; 
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less"; 
-      moreText.style.display = "inline";
-    }
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
   }
-function myFunction1() {
-    var dots1 = document.getElementById("dots1");
-    var moreText1 = document.getElementById("more1");
-    var btnText1 = document.getElementById("myBtn1");
-  
-    if (dots1.style.display === "none") {
-      dots1.style.display = "inline";
-      btnText1.innerHTML = "Read more"; 
-      moreText1.style.display = "none";
-    } else {
-      dots1.style.display = "none";
-      btnText1.innerHTML = "Read less"; 
-      moreText1.style.display = "inline";
-    }
-  }
-function myFunction2() {
-    var dots2 = document.getElementById("dots2");
-    var moreText2 = document.getElementById("more2");
-    var btnText2 = document.getElementById("myBtn2");
-  
-    if (dots2.style.display === "none") {
-      dots2.style.display = "inline";
-      btnText2.innerHTML = "Read more"; 
-      moreText2.style.display = "none";
-    } else {
-      dots2.style.display = "none";
-      btnText2.innerHTML = "Read less"; 
-      moreText2.style.display = "inline";
-    }
-  }
+}
 
-  let slideIndex = 1;
+function myFunction() { toggleReadMore("dots", "more", "myBtn"); }
+function myFunction1() { toggleReadMore("dots1", "more1", "myBtn1"); }
+function myFunction2() { toggleReadMore("dots2", "more2", "myBtn2"); }
+
+// === SLIDESHOW ===
+let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+function plusSlides(n) { showSlides(slideIndex += n); }
+function currentSlide(n) { showSlides(slideIndex = n); }
 
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; 
+  const slides = document.getElementsByClassName("mySlides");
+  const dots = document.getElementsByClassName("dot");
+  if (slides.length === 0) return;
+
+  if (n > slides.length) slideIndex = 1;
+  if (n < 1) slideIndex = slides.length;
+
+  for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+  slides[slideIndex - 1].style.display = "block";
+
+  if (dots.length) {
+    for (let i = 0; i < dots.length; i++) dots[i].classList.remove("active");
+    dots[slideIndex - 1].classList.add("active");
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";             
-  dots[slideIndex-1].className += " active";
 }
 
-
-const hiddenElements = document.querySelector('.main-header-text-offer');
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry)
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    } else {
-      entry.target.classList.remove('show');
-    }
+// === SCROLL ANIMATION ===
+const hiddenElements = document.querySelectorAll('.main-header-text-offer');
+if (hiddenElements.length) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('show');
+      else entry.target.classList.remove('show');
+    });
   });
-});
+  hiddenElements.forEach(el => observer.observe(el));
+}
 
+// === LANGUAGE SWITCHER ===
+const languageSelect = document.getElementById("languageSelect");
+if (languageSelect) {
+  languageSelect.addEventListener("change", e => setLanguage(e.target.value));
 
-hiddenElements.forEach((el) => observer.observe(el));
-
-
-
+  window.addEventListener("DOMContentLoaded", () => {
+    const browserLang = navigator.language.slice(0, 2);
+    const supported = ["pl", "en", "it", "es"];
+    const lang = supported.includes(browserLang) ? browserLang : "pl";
+    languageSelect.value = lang;
+    setLanguage(lang);
+  });
+}
