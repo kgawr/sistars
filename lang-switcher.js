@@ -1,5 +1,12 @@
 // lang-switcher.js
 // Full-site translations (pl default). Keys match data-i18n attributes.
+var translations = translations || {};
+translations.pl = translations.pl || {};
+translations.en = translations.en || {};
+translations.it = translations.it || {};
+translations.es = translations.es || {};
+translations.ca = translations.ca || {};
+
 (function(){
   const translations = {
     pl: {
@@ -30,6 +37,29 @@
       "news.drama.title": "Teatr / Drama",
       "news.drama.text": "Oferujemy \"dniowe obozy językowe\", podczas których uczymy angielskiego przez teatr. Dzieci tworzą własne scenariusze i prezentują występ na zakończenie.",
       "news.drama.details": "Koszt kursu: 160 Euro<br><br>Harmonogram:<br>lekcja 1: 8:30–10:00<br>lekcja 2: 10:15–11:30<br>lekcja 3: 11:45–13:00<br><br>Czas trwania: pon.–pt.<br><br>Terminy obozów: 26.06.2023–30.06.2023, 21.08.2023–25.08.2023, 04.09.2023–08.09.2023",
+      "camp.full.title": "Obozy Full-Immersion",
+      "camp.full.general.title": "Obóz Języka Angielskiego — Full Immersion",
+      "camp.full.general.text": `🌟 Obóz Języka Angielskiego dla Dzieci i Młodzieży 🌟<br><br>
+      Odkryj potencjał swojego dziecka podczas naszych dwutygodniowych obozów w języku angielskim. Obozy są przeznaczone dla uczniów szkół podstawowych i średnich, rozwijają umiejętności komunikacji i pewność siebie, a także kreatywność, współpracę i rozwiązywanie problemów. Po obozie dzieci wracają pełne motywacji i wiary w swoje umiejętności językowe.<br><br>
+      📅 Terminy: 15–28 czerwca / 17–28 sierpnia<br>
+      🕒 Plan dnia: 8:30–10:30 | 10:15–11:30 | 11:45–13:00<br>
+      👩‍🏫 Wspaniali nauczyciele i dynamiczni opiekunowie<br>
+      🎉 Zabawy i inspirujące zajęcia: gry i zadania rozwijające kreatywność, współpracę i komunikację.<br>
+      💰 Przystępna cena i dostępność — możliwość 50% zniżki dla rodzin potrzebujących.<br><br>
+      📧 kidsandstars.camps@gmail.com<br>
+      📱 WhatsApp: +48 668 234 331`,
+
+      "camp.full.theatre.title": "Obóz: Angielski przez Teatr",
+      "camp.full.theatre.text": `🌟 Obóz Języka Angielskiego: Angielski przez Teatr 🌟<br><br>
+      Rozpal w dziecku pewność siebie i kreatywność dzięki naszym wyjątkowym obozom językowym! Dwutygodniowy program łączy naukę angielskiego z teatrem, rozwijając komunikację i ekspresję w ciekawy, interaktywny sposób. Na koniec obozu dzieci występują przed rodzicami.<br><br>
+      📅 Terminy: 15–28 czerwca / 17–28 sierpnia<br>
+      🕒 Plan dnia: 8:30–10:30 | 10:15–11:30 | 11:45–13:00<br>
+      👩‍🏫 Wyjątkowi nauczyciele i dynamiczni opiekunowie<br>
+      🎭 Ciekawe zajęcia teatralne, praca zespołowa i kreatywne wyzwania.<br>
+      💰 Możliwość 50% zniżki dla rodzin potrzebujących.<br><br>
+      📧 kidsandstars.camps@gmail.com<br>
+      📱 WhatsApp: +48 668 234 331`,
+
       "news.euroweek.title": "Euroweek",
       "news.euroweek.text": "Euroweek to Szkoła Liderów — uczestnicy spotykają wolontariuszy z całego świata, poprawiają angielski, umiejętności publicznego przemawiania oraz poznają tańce i kulturę innych krajów.",
       "news.salisbury.title": "Earth Camp w Salisbury",
@@ -54,6 +84,7 @@
       "footer.seeyou": "Do zobaczenia w",
       "footer.tagline": "Twoje Centrum Edukacyjne."
     },
+    
     en: {
       "meta.title": "Sistars",
       "header.parallaxTitle": "Welcome to Sistars!",
@@ -104,7 +135,8 @@
       "contact.socialTitle": "Social media",
       "footer.follow": "For more news follow us on",
       "footer.seeyou": "See you soon at",
-      "footer.tagline": "Your Educational Centre."
+      "footer.tagline": "Your Educational Centre.",
+      "camp.full.title": "Full Immersion English Camps"
     },
     it: {
       "meta.title": "Sistars",
@@ -134,6 +166,29 @@
       "news.drama.title": "Drama",
       "news.drama.text": "Offriamo campi giornalieri in inglese dove insegniamo attraverso il teatro. I bambini creano copioni e si esibiscono alla fine.",
       "news.drama.details": "Costo del corso: 160 Euro<br><br>Orario:<br>lezione 1: 8:30–10:00<br>lezione 2: 10:15–11:30<br>lezione 3: 11:45–13:00<br><br>Durata: Lun–Ven<br><br>Date: 26.06.2023–30.06.2023, 21.08.2023–25.08.2023, 04.09.2023–08.09.2023",
+      "camp.full.title": "Campi di Inglese Full Immersion",
+      "camp.full.general.title": "Campo di Inglese — Full Immersion",
+      "camp.full.general.text": `🌟 Campi di Inglese Full Immersion per Bambini e Ragazzi 🌟<br><br>
+      Sblocca il potenziale del tuo bambino con i nostri campi full immersion di due settimane...<br><br>
+      📅 Date: 15–28 giugno / 17–28 agosto<br>
+      🕒 Orario giornaliero: 8:30–10:30 | 10:15–11:30 | 11:45–13:00<br>
+      👩‍🏫 Insegnanti qualificati e tutor dinamici.<br>
+      🎉 Attività creative e stimolanti.<br>
+      💰 Possibilità di sconto 50% per famiglie bisognose.<br><br>
+      📧 kidsandstars.camps@gmail.com<br>
+      📱 WhatsApp: +48 668 234 331`,
+
+      "camp.full.theatre.title": "Campo: Inglese attraverso il Teatro",
+      "camp.full.theatre.text": `🌟 Campo di Inglese Full Immersion: Teatro 🌟<br><br>
+      Un programma che unisce lingua e teatro con spettacolo finale davanti ai genitori.<br><br>
+      📅 Date: 15–28 giugno / 17–28 agosto<br>
+      🕒 Orario: 8:30–10:30 | 10:15–11:30 | 11:45–13:00<br>
+      👩‍🏫 Educatori creativi.<br>
+      🎭 Attività teatrali, scrittura e recitazione.<br>
+      💰 Posti a metà prezzo per famiglie che ne hanno bisogno.<br><br>
+      📧 kidsandstars.camps@gmail.com<br>
+      📱 WhatsApp: +48 668 234 331`,
+
       "news.euroweek.title": "Euroweek",
       "news.euroweek.text": "Euroweek è una Scuola di Leader — partecipanti incontrano volontari internazionali, migliorano l'inglese e imparano danze e tradizioni culturali.",
       "news.salisbury.title": "Earth Camp a Salisbury",
@@ -186,6 +241,28 @@
       "news.drama.title": "Drama",
       "news.drama.text": "Ofrecemos campamentos diarios en inglés donde enseñamos a través del teatro. Los niños crean guiones y actúan al final del curso.",
       "news.drama.details": "Precio: 160 Euros<br><br>Horario:<br>1ª clase: 8:30–10:00<br>2ª clase: 10:15–11:30<br>3ª clase: 11:45–13:00<br><br>Duración: Lun–Vie<br><br>Fechas: 26.06.2023–30.06.2023, 21.08.2023–25.08.2023, 04.09.2023–08.09.2023",
+      "camp.full.title": "Campamentos de Inmersión Total en Inglés",
+      "camp.full.general.title": "Campamento de Inglés — Inmersión Total",
+      "camp.full.general.text": `🌟 Campamentos de Inmersión Total en Inglés para Niños y Jóvenes 🌟<br><br>
+      Desbloquea el potencial de tu hijo con nuestros campamentos intensivos de dos semanas...<br><br>
+      📅 Fechas: 15–28 junio / 17–28 agosto<br>
+      🕒 Horario: 8:30–10:30 | 10:15–11:30 | 11:45–13:00<br>
+      👩‍🏫 Profesores dinámicos y cualificados.<br>
+      🎉 Actividades divertidas e inspiradoras.<br>
+      💰 Plazas a mitad de precio para familias necesitadas.<br><br>
+      📧 kidsandstars.camps@gmail.com<br>
+      📱 WhatsApp: +48 668 234 331`,
+
+      "camp.full.theatre.title": "Campamento: Inglés a través del Teatro",
+      "camp.full.theatre.text": `🌟 Campamento de Inmersión Total: Teatro 🌟<br><br>
+      Teatro + inglés = confianza y creatividad. Presentación final para los padres.<br><br>
+      📅 Fechas: 15–28 junio / 17–28 agosto<br>
+      🕒 Horario: 8:30–10:30 | 10:15–11:30 | 11:45–13:00<br>
+      🎭 Actividades creativas y juegos lingüísticos.<br>
+      💰 Descuentos del 50% disponibles.<br><br>
+      📧 kidsandstars.camps@gmail.com<br>
+      📱 WhatsApp: +48 668 234 331`,
+
       "news.euroweek.title": "Euroweek",
       "news.euroweek.text": "Euroweek es una Escuela de Líderes donde los participantes conocen voluntarios internacionales, mejoran inglés y oratoria y aprenden danzas y culturas.",
       "news.salisbury.title": "Earth Camp en Salisbury",
@@ -208,9 +285,84 @@
       "contact.socialTitle": "Redes sociales",
       "footer.follow": "Para más noticias síguenos en",
       "footer.seeyou": "Te esperamos en",
-      "footer.tagline": "Tu Centro Educativo."
+      "footer.tagline": "Tu Centro Educativo.",
+      "camp.full.title": "Campamentos de Inmersión Total en Inglés"
+    },
+    ca: {
+        "meta.title": "Sistars",
+        "header.parallaxTitle": "Benvinguts a Sistars!",
+        "nav.offer": "Oferta",
+        "nav.school": "Escola",
+        "nav.news": "Projectes",
+        "nav.about": "Sobre nosaltres",
+        "nav.gallery": "Galeria",
+        "nav.contact": "Contacte",
+        "main.h1": "Benvinguts a <span class=\"sis\">Sistars !</span>",
+        "main.sub": "Centre educatiu dirigit amb passió",
+        "main.lead": "Som un centre educatiu familiar — tres germanes que creen un ambient acollidor i proper. Treballem amb professors nadius de diferents països.",
+        "main.readMore": "Llegeix més",
+        "offer.header": "Què oferim?",
+        "offer.sub2": "",
+        "offer.list": "<i class=\"fa fa-arrow-right\"></i> Classes en grup de fins a 5 alumnes!<br><i class=\"fa fa-arrow-right\"></i> Anglès i Espanyol<br><i class=\"fa fa-arrow-right\"></i> Classes de teatre<br><i class=\"fa fa-arrow-right\"></i> Cants en anglès i polonès<br><i class=\"fa fa-arrow-right\"></i> Ioga en anglès<br>",
+        "offer.audience": "- per a infants (1–5 anys)<br>- per a alumnes de primària<br>- preparació per a exàmens finals<br>- classes per a secundària<br>- preparació per al batxillerat<br>- preparació per a exàmens FCE/CAE<br>- per a adults i empreses",
+        "school.title": "Què fa especial la nostra escola?",
+        "school.feature1.title": "Coneixement",
+        "school.feature1.text": "Creiem que aprendre és un viatge per a tota la vida. Les tres germanes tenim estudis en filologia i educació, i continuem formant-nos per oferir l’ensenyament de més qualitat.",
+        "school.feature2.title": "Experiència",
+        "school.feature2.text": "Més de deu anys d’experiència docent, tant a Polònia com a l’estranger. Preparem per a exàmens internacionals i utilitzem mètodes moderns i actius.",
+        "school.feature3.title": "Ambient",
+        "school.feature3.text": "La nostra escola està situada a la nostra casa familiar — un espai segur, càlid i amb atenció personalitzada.",
+        "news.header": "Els nostres projectes",
+        "news.drama.title": "Teatre / Drama",
+        "news.drama.text": "Oferim campaments d’anglès d’un dia on ensenyem la llengua a través del teatre. Els nens escriuen els seus propis guions i actuen al final del curs.",
+        "news.drama.details": "Preu: 160 euros<br><br>Horari:<br>1a classe: 8:30–10:00<br>2a classe: 10:15–11:30<br>3a classe: 11:45–13:00<br><br>Durada: Dilluns–Divendres<br><br>Dates: 26.06.2023–30.06.2023, 21.08.2023–25.08.2023, 04.09.2023–08.09.2023",
+        "news.euroweek.title": "Euroweek",
+        "news.euroweek.text": "Euroweek és una Escola de Líders — els participants coneixen voluntaris d’arreu del món, milloren el seu anglès, practiquen parlar en públic i aprenen danses i cultures.",
+        "news.salisbury.title": "Earth Camp a Salisbury",
+        "news.salisbury.text": "Cada estiu millorem les nostres habilitats pedagògiques participant en formacions a Salisbury — estudiants i acompanyants són benvinguts.",
+        "parallax2.title": "Fundat el 2017",
+        "about.title": "Coneix les germanes",
+        "about.daria.short": "\"Dona de molts talents\", ballarina, violinista i professora. Ha estudiat Filologia Anglesa amb Teràpia Pedagògica i Filologia Espanyola.",
+        "about.daria.more": "Ha participat com a voluntària a l’EURO 2012, organitza concursos de cançons, dirigeix cursos de dansa i tallers vocals. Toca el violí i viatja sovint per aprendre i ensenyar.",
+        "about.marta.short": "Dona amb visió, pianista i professora.",
+        "about.marta.more": "Llicenciada en Filologia Espanyola amb especialització docent, ha impartit classes vocals a Andalusia i promou projectes culturals.",
+        "about.mirela.short": "Violoncel·lista, poeta i professora. Graduada en Relacions Internacionals i TESOL a la Middlesex University.",
+        "about.mirela.more": "Ha cursat estudis a Cambridge i Aktorstudio (Varsòvia) i ha ensenyat a Espanya i Anglaterra.",
+        "about.readMore": "Llegeix més",
+        "gallery.title": "Galeria",
+        "gallery.slide1": "Espectacle de Nadal",
+        "gallery.slide2": "Campament Euroweek",
+        "contact.title": "Contacte",
+        "contact.phoneTitle": "Telèfon",
+        "contact.addressTitle": "Adreça",
+        "contact.socialTitle": "Xarxes socials",
+        "footer.follow": "Segueix-nos a:",
+        "footer.seeyou": "Ens veiem a",
+        "footer.tagline": "El teu centre educatiu.",
+        "camp.full.title": "Campaments d’Immersió Total en Anglès",
+        "camp.full.general.title": "Campament d’Anglès — Immersió Total",
+        "camp.full.general.text": `🌟 Campaments d’Immersió Total en Anglès per a Nens i Joves 🌟<br><br>
+      Descobreix el potencial del teu fill amb els nostres campaments de dues setmanes d’immersió completa. Pensats per a estudiants de primària i secundària, milloren la comunicació, la creativitat, el treball en equip i la confiança.<br><br>
+      📅 Dates: 15–28 juny / 17–28 agost<br>
+      🕒 Horari: 8:30–10:30 | 10:15–11:30 | 11:45–13:00<br>
+      👩‍🏫 Professors dinàmics i qualificats.<br>
+      🎉 Activitats lúdiques i creatives per aprendre mentre es diverteixen.<br>
+      💰 Places al 50% per a famílies que ho necessitin.<br><br>
+      📧 kidsandstars.camps@gmail.com<br>
+      📱 WhatsApp: +48 668 234 331`,
+      
+        "camp.full.theatre.title": "Campament: Anglès a través del Teatre",
+        "camp.full.theatre.text": `🌟 Campament d’Anglès: Aprèn a través del Teatre 🌟<br><br>
+      Una experiència única on els alumnes aprenen anglès creant i interpretant la seva pròpia obra. Treball en equip, expressió oral i confiança!<br><br>
+      📅 Dates: 15–28 juny / 17–28 agost<br>
+      🕒 Horari: 8:30–10:30 | 10:15–11:30 | 11:45–13:00<br>
+      🎭 Activitats teatrals, jocs lingüístics i representació final.<br>
+      💰 Places al 50% per a famílies que ho necessitin.<br><br>
+      📧 kidsandstars.camps@gmail.com<br>
+      📱 WhatsApp: +48 668 234 331`
     }
-  }; // end translations
+  };
+  
 
   // Utilities
   function getSavedLang(){

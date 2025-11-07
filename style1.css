@@ -580,6 +580,38 @@ opacity: 1;
     padding-bottom: 20px;
     padding-right: 20px;
   }
+  .news-camps {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 900px;
+  }
+  
+  .news-camps h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: var(--accent-color);
+  }
+  
+  .news-camps .camp-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: #fff;
+  }
+  
+  .news-camps .camp-item h3 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: var(--text-color);
+  }
+  
+  .news-camps .camp-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+  }
+  
 /* End of Projects Section */
 
 
