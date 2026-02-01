@@ -82,7 +82,59 @@ translations.ca = translations.ca || {};
       "contact.socialTitle": "Media społecznościowe",
       "footer.follow": "Śledź nas na:",
       "footer.seeyou": "Do zobaczenia w",
-      "footer.tagline": "Twoje Centrum Edukacyjne."
+      "footer.tagline": "Twoje Centrum Edukacyjne.",
+  "nav.matura": "Last Call for Matura",
+  "matura.title": "Last Call for Matura",
+  "matura.desc": `🔔 LAST CALL FOR MATURA with SISTARS<br>
+Intensywny kurs premium – OSTATNI PROGRAM RATUNKOWY<br>
+PRZED MATURĄ<br>
+9 tygodni. 59 dni pracy. Jeden cel: ZDANA MATURA.<br>
+<br>
+<strong>DLACZEGO TO JEST KURS PREMIUM?</strong><br>
+Bo nie pracujemy tylko w soboty.<br>
+Pracujemy na Twój sukces przez 59 dni.<br>
+W trakcie kursu otrzymujesz:<br>
+🔥 regularne zadania do pracy własnej<br>
+🔥 codzienne wsparcie motywacyjne i emocjonalne<br>
+🔥 kontrolę systematyczności<br>
+🔥 realną pracę pod zadania maturalne<br>
+Dostajesz dostęp do zamkniętej grupy na Telegramie, gdzie:<br>
+● codziennie raportujesz wykonane zadania<br>
+● dostajesz motywację i przypomnienia<br>
+● nie jesteś sam z nauką<br>
+<br>
+<strong>DLA KOGO JEST TEN KURS?</strong><br>
+Dla osób, które:<br>
+✔ są na ostatniej prostej przed maturą<br>
+✔ czują, że same nie dowiozą systematyczności<br>
+✔ potrzebują konkretnego planu + motywacyjnego kopniaka<br>
+✔ chcą zdać maturę podstawową, a nie „liczyć na szczęście”<br>
+<br>
+<strong>JAK WYGLĄDA KURS?</strong><br>
+📅 SPOTKANIA NA ŻYWO (SOBOTY)<br>
+<br>
+Spotkanie zapoznawcze<br>
+06.03.2026 — 1 godzina<br>
+Ustalamy zasady, plan działania i sposób pracy<br>
+9 spotkań intensywnych (po 3 godziny):<br>
+07.03 • 14.03 • 21.03 • 28.03<br>
+04.04 • 11.04 • 18.04 • 25.04 • 02.05<br>
+<br>
+⏰ STRUKTURA ZAJĘĆ<br>
+Każde spotkanie to 3 intensywne bloki po 60 minut:<br>
+● 8:00–9:00<br>
+● 9:10–10:10<br>
+● 10:20–11:20<br>
+<br>
+Między blokami — krótkie przerwy, zero nudy, maksimum skupienia.<br>
+<br>
+🎯 CEL JEST JEDEN<br>
+Zdana matura podstawowa z języka angielskiego.<br>
+- bez chaosu<br>
+- bez odkładania na jutro<br>
+- z jasnym planem i realnym wsparciem<br>
+<br>
+Inwestycja w program: 3 997 zł lub 3 dogodne raty` 
     },
     
     en: {
@@ -136,7 +188,10 @@ translations.ca = translations.ca || {};
       "footer.follow": "For more news follow us on",
       "footer.seeyou": "See you soon at",
       "footer.tagline": "Your Educational Centre.",
-      "camp.full.title": "Full Immersion English Camps"
+      "camp.full.title": "Full Immersion English Camps",
+  "nav.matura": "Last Call for Matura",
+  "matura.title": "Last Call for Matura",
+      "matura.desc": "An intensive English course for high school graduates – the final chance to revise key material, practise speaking and boost confidence before the Matura exam."
     },
     it: {
       "meta.title": "Sistars",
@@ -211,7 +266,10 @@ translations.ca = translations.ca || {};
       "contact.socialTitle": "Social media",
       "footer.follow": "Per altre notizie seguiteci su",
       "footer.seeyou": "Ci vediamo a",
-      "footer.tagline": "Il vostro Centro Educativo."
+      "footer.tagline": "Il vostro Centro Educativo.",
+  "nav.matura": "Last Call for Matura",
+  "matura.title": "Last Call for Matura",
+      "matura.desc": "Corso intensivo di inglese per studenti maturandi – l’ultima occasione per ripassare, esercitarsi e affrontare l’esame di maturità con sicurezza."
     },
     es: {
       "meta.title": "Sistars",
@@ -286,7 +344,10 @@ translations.ca = translations.ca || {};
       "footer.follow": "Para más noticias síguenos en",
       "footer.seeyou": "Te esperamos en",
       "footer.tagline": "Tu Centro Educativo.",
-      "camp.full.title": "Campamentos de Inmersión Total en Inglés"
+      "camp.full.title": "Campamentos de Inmersión Total en Inglés",
+  "nav.matura": "Last Call for Matura",
+  "matura.title": "Last Call for Matura",
+      "matura.desc": "Curso intensivo de inglés para estudiantes que se preparan para la Matura – la última oportunidad para repasar y ganar confianza antes del examen."
     },
     ca: {
         "meta.title": "Sistars",
@@ -359,7 +420,11 @@ translations.ca = translations.ca || {};
       🎭 Activitats teatrals, jocs lingüístics i representació final.<br>
       💰 Places al 50% per a famílies que ho necessitin.<br><br>
       📧 kidsandstars.camps@gmail.com<br>
-      📱 WhatsApp: +48 668 234 331`
+      📱 WhatsApp: +48 668 234 331`,
+  "nav.matura": "Last Call for Matura",
+  "matura.title": "Last Call for Matura",
+      "matura.desc": "Curs intensiu d’anglès per a estudiants de batxillerat – l’última oportunitat per repassar, practicar i afrontar la Matura amb confiança."
+
     }
   };
   

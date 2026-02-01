@@ -40,16 +40,32 @@ function toggleReadMore(dotsId, moreId, btnId) {
   const moreText = document.getElementById(moreId);
   const btnText = document.getElementById(btnId);
 
-  if (!dots || !moreText || !btnText) return;
+  if (!moreText || !btnText) return;
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
+  // language-aware labels (fallback to English)
+  const lang = (document.documentElement && document.documentElement.lang) ? document.documentElement.lang.slice(0,2) : 'pl';
+  const labels = {
+    pl: { more: 'Czytaj więcej', less: 'Czytaj mniej' },
+    en: { more: 'Read more', less: 'Read less' },
+    it: { more: 'Leggi di più', less: 'Leggi meno' },
+    es: { more: 'Leer más', less: 'Leer menos' },
+    ca: { more: 'Llegeix més', less: 'Llegeix menys' }
+  };
+  const labelSet = labels[lang] || labels['en'];
+
+  const isHidden = moreText.style.display === 'none' || moreText.style.display === '';
+
+  // toggle dots if present
+  if (dots) {
+    dots.style.display = isHidden ? 'none' : 'inline';
+  }
+
+  if (isHidden) {
+    moreText.style.display = 'inline';
+    btnText.innerHTML = labelSet.less;
   } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
+    moreText.style.display = 'none';
+    btnText.innerHTML = labelSet.more;
   }
 }
 

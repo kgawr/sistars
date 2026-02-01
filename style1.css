@@ -611,6 +611,164 @@ opacity: 1;
     line-height: 1.6;
     color: #333;
   }
+  /* ===== LAST CALL FOR MATURA ===== */
+.last-matura {
+  margin-bottom: 80px;
+  /* center content and keep consistent side margins with other sections */
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.last-matura-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.last-matura-text {
+  flex: 1;
+}
+
+.last-matura-text h3 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.last-matura-text p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.last-matura-image {
+  flex: 1;
+}
+
+.last-matura-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+.payment-info {
+  margin-top: 12px;
+  padding: 12px;
+  background: linear-gradient(180deg, rgba(4,97,68,0.03), rgba(255,255,255,0.02));
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #333;
+  max-width: 100%;
+}
+
+.payment-info h4 {
+  margin: 0 0 8px 0;
+  color: #087f5b;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.payment-info p { 
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* FORMULARZ */
+.matura-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 520px;
+  font-size: 1.05rem; /* smaller base font for the form */
+}
+
+.matura-form fieldset {
+  border: 1px solid #e9ecef;
+  padding: 14px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.matura-form legend {
+  font-weight: 700;
+  font-size: 1rem; /* smaller legend */
+  color: #087f5b;
+  padding: 0 6px;
+}
+
+.matura-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1.05rem; /* reduced label size */
+  color: #333;
+}
+
+.matura-form input[type="text"],
+.matura-form input[type="email"],
+.matura-form input[type="tel"] {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.05rem; /* smaller input text */
+  padding: 10px 12px;
+}
+
+.payment-options label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.payment-options input[type="checkbox"] {
+  margin-right: 8px;
+  transform: translateY(1px);
+}
+
+.matura-form input {
+  padding: 12px 14px;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.matura-form input:focus {
+  outline: none;
+  border-color: #1abc9c;
+}
+
+/* przycisk – używa stylu strony */
+.btn-primary {
+  margin-top: 10px;
+  padding: 12px 24px;
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #17a589;
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 900px) {
+  .last-matura-content {
+    flex-direction: column;
+  }
+
+  .last-matura-image {
+    order: -1;
+  }
+  .matura-form {
+    max-width: 100%;
+    padding: 0 8px;
+  }
+}
   
 /* End of Projects Section */
 
@@ -729,6 +887,17 @@ opacity: 1;
   line-height: 1.8;
   text-align: justify;
   padding: 10px;
+}
+/* hidden full-text paragraphs for the cards (expanded content) */
+.card-p-more {
+  font-size: 18px;
+  color: #D4E3DD;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 10px;
+  margin: 0 0 20px 0; /* match spacing of other card content */
+  display: block;
+  box-sizing: border-box;
 }
 .card-btn {
   font-size: 18px;

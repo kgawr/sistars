@@ -38,6 +38,7 @@
   
           <!-- Lista menu -->
           <ul>
+              <li><a href="#last-matura" data-i18n="nav.matura">Last Call for Matura</a></li>
             <li><a href="#offer" data-after="offer" data-i18n="nav.offer">offer</a></li>
             <li><a href="#school" data-after="school" data-i18n="nav.school">school</a></li>
             <li><a href="#news" data-after="projects" data-i18n="nav.news">projects</a></li>
@@ -166,6 +167,128 @@
     <div class="news-header">
     <h2 class="news-h2" data-i18n="news.header">Our projects</h2>
     </div>
+  <!-- LAST CALL FOR MATURA -->
+<div id="last-matura" class="project-block last-matura">
+
+  <div class="last-matura-content">
+
+      <!-- LEWA STRONA: OPIS + FORMULARZ -->
+      <div class="last-matura-text">
+        <h3 data-i18n="matura.title">Last Call for Matura</h3>
+
+  <p data-i18n="matura.desc">
+          🔔 LAST CALL FOR MATURA with SISTARS<br>
+          Intensywny kurs premium – OSTATNI PROGRAM RATUNKOWY<br>
+          PRZED MATURĄ<br>
+          9 tygodni. 59 dni pracy. Jeden cel: ZDANA MATURA.<br>
+          <br>
+          <strong>DLACZEGO TO JEST KURS PREMIUM?</strong><br>
+          Bo nie pracujemy tylko w soboty.<br>
+          Pracujemy na Twój sukces przez 59 dni.<br>
+          W trakcie kursu otrzymujesz:<br>
+          🔥 regularne zadania do pracy własnej<br>
+          🔥 codzienne wsparcie motywacyjne i emocjonalne<br>
+          🔥 kontrolę systematyczności<br>
+          🔥 realną pracę pod zadania maturalne<br>
+          Dostajesz dostęp do zamkniętej grupy na Telegramie, gdzie:<br>
+          ● codziennie raportujesz wykonane zadania<br>
+          ● dostajesz motywację i przypomnienia<br>
+          ● nie jesteś sam z nauką<br>
+          <br>
+          <strong>DLA KOGO JEST TEN KURS?</strong><br>
+          Dla osób, które:<br>
+          ✔ są na ostatniej prostej przed maturą<br>
+          ✔ czują, że same nie dowiozą systematyczności<br>
+          ✔ potrzebują konkretnego planu + motywacyjnego kopniaka<br>
+          ✔ chcą zdać maturę podstawową, a nie „liczyć na szczęście”<br>
+          <br>
+          <strong>JAK WYGLĄDA KURS?</strong><br>
+          📅 SPOTKANIA NA ŻYWO (SOBOTY)<br>
+          <br>
+          Spotkanie zapoznawcze<br>
+          06.03.2026 — 1 godzina<br>
+          Ustalamy zasady, plan działania i sposób pracy<br>
+          9 spotkań intensywnych (po 3 godziny):<br>
+          07.03 • 14.03 • 21.03 • 28.03<br>
+          04.04 • 11.04 • 18.04 • 25.04 • 02.05<br>
+          <br>
+          ⏰ STRUKTURA ZAJĘĆ<br>
+          Każde spotkanie to 3 intensywne bloki po 60 minut:<br>
+          ● 8:00–9:00<br>
+          ● 9:10–10:10<br>
+          ● 10:20–11:20<br>
+          <br>
+          Między blokami — krótkie przerwy, zero nudy, maksimum skupienia.<br>
+          <br>
+          🎯 CEL JEST JEDEN<br>
+          Zdana matura podstawowa z języka angielskiego.<br>
+          - bez chaosu<br>
+          - bez odkładania na jutro<br>
+          - z jasnym planem i realnym wsparciem<br>
+          <br>
+          Inwestycja w program: 3 997 zł lub 3 dogodne raty
+        </p>
+
+        <div class="payment-info" aria-label="Metody płatności">
+          <h4>METODY PŁATNOŚCI:</h4>
+          <p>
+            Płatność przelewem bankowym<br>
+            Millennium bank:<br>
+            <strong>87116022020000000333349729</strong><br>
+            lub przelew BLIK na numer telefonu: <strong>660-140-632</strong>
+          </p>
+        </div>
+
+        <!-- FORMULARZ -->
+  <form class="matura-form" action="mailto:sistarsschool@gmail.com" method="post" enctype="text/plain">
+          <fieldset>
+            <legend>Dane opiekuna</legend>
+            <label for="guardian-name">Imię i nazwisko opiekuna prawnego</label>
+            <input id="guardian-name" name="guardian_name" type="text" placeholder="Imię i nazwisko" required>
+
+            <label for="guardian-email">Adres e-mail opiekuna</label>
+            <input id="guardian-email" name="guardian_email" type="email" placeholder="Adres e-mail" required>
+
+            <label for="guardian-phone">Numer telefonu opiekuna</label>
+            <input id="guardian-phone" name="guardian_phone" type="tel" placeholder="Numer telefonu" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Dane ucznia</legend>
+            <label for="student-name">Imię i nazwisko ucznia</label>
+            <input id="student-name" name="student_name" type="text" placeholder="Imię i nazwisko" required>
+
+            <label for="student-email">Adres e-mail ucznia</label>
+            <input id="student-email" name="student_email" type="email" placeholder="Adres e-mail" required>
+
+            <label for="student-phone">Numer telefonu ucznia</label>
+            <input id="student-phone" name="student_phone" type="tel" placeholder="Numer telefonu" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferowana forma płatności</legend>
+            <div class="payment-options">
+              <label><input type="checkbox" name="payment[]" value="one_time"> Płatność jednorazowa</label>
+              <label><input type="checkbox" name="payment[]" value="three_installments"> 3 raty</label>
+              <label><input type="checkbox" name="payment[]" value="bank_transfer"> Przelew bankowy</label>
+              <label><input type="checkbox" name="payment[]" value="blik"> BLIK</label>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn-primary">
+            Rezerwuj miejsce w programie
+          </button>
+        </form>
+      </div>
+
+      <!-- PRAWA STRONA: ZDJĘCIE -->
+      <div class="last-matura-image">
+        <img src="img/lastcall.png" alt="Last Call for Matura">
+      </div>
+
+    </div>
+</div>
+
     <!-- ✅ FULL IMMERSION CAMPS -->
 <div class="news-full-immersion">
 
@@ -403,6 +526,46 @@
 
   <!-- TRANSLATION / LANGUAGE SWITCHER script (replace or keep separate file) -->
   <script src="./lang-switcher.js" defer></script>
+
+  <script>
+    // Build a mailto submission so form data is sent to sistarsschool@gmail.com
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.querySelector('.matura-form');
+      if (!form) return;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const to = 'sistarsschool@gmail.com';
+        const subject = encodeURIComponent('Zgłoszenie: Last Call for Matura');
+
+        const get = id => (form[id] && form[id].value) ? form[id].value.trim() : '';
+
+        const guardianName = get('guardian_name');
+        const guardianEmail = get('guardian_email');
+        const guardianPhone = get('guardian_phone');
+        const studentName = get('student_name');
+        const studentEmail = get('student_email');
+        const studentPhone = get('student_phone');
+
+        const payments = Array.from(form.querySelectorAll('input[name="payment[]"]:checked'))
+          .map(i => i.value)
+          .join(', ');
+
+        let body = '';
+        body += `Imię i nazwisko opiekuna: ${guardianName}\r\n`;
+        body += `E-mail opiekuna: ${guardianEmail}\r\n`;
+        body += `Telefon opiekuna: ${guardianPhone}\r\n\r\n`;
+        body += `Imię i nazwisko ucznia: ${studentName}\r\n`;
+        body += `E-mail ucznia: ${studentEmail}\r\n`;
+        body += `Telefon ucznia: ${studentPhone}\r\n\r\n`;
+        body += `Preferowana forma płatności: ${payments || 'Brak'}\r\n`;
+
+        const mailto = `mailto:${to}?subject=${subject}&body=${encodeURIComponent(body)}`;
+        // open user's email client
+        window.location.href = mailto;
+      });
+    });
+  </script>
 
 </body>
 </html>
