@@ -86,55 +86,54 @@ translations.ca = translations.ca || {};
   "nav.matura": "Last Call for Matura",
   "matura.title": "Last Call for Matura",
   "matura.desc": `🔔 LAST CALL FOR MATURA with SISTARS<br>
-Intensywny kurs premium – OSTATNI PROGRAM RATUNKOWY<br>
-PRZED MATURĄ<br>
-9 tygodni. 59 dni pracy. Jeden cel: ZDANA MATURA.<br>
-<br>
-<strong>DLACZEGO TO JEST KURS PREMIUM?</strong><br>
-Bo nie pracujemy tylko w soboty.<br>
-Pracujemy na Twój sukces przez 59 dni.<br>
-W trakcie kursu otrzymujesz:<br>
-🔥 regularne zadania do pracy własnej<br>
-🔥 codzienne wsparcie motywacyjne i emocjonalne<br>
-🔥 kontrolę systematyczności<br>
-🔥 realną pracę pod zadania maturalne<br>
-Dostajesz dostęp do zamkniętej grupy na Telegramie, gdzie:<br>
-● codziennie raportujesz wykonane zadania<br>
-● dostajesz motywację i przypomnienia<br>
-● nie jesteś sam z nauką<br>
-<br>
-<strong>DLA KOGO JEST TEN KURS?</strong><br>
-Dla osób, które:<br>
-✔ są na ostatniej prostej przed maturą<br>
-✔ czują, że same nie dowiozą systematyczności<br>
-✔ potrzebują konkretnego planu + motywacyjnego kopniaka<br>
-✔ chcą zdać maturę podstawową, a nie „liczyć na szczęście”<br>
-<br>
-<strong>JAK WYGLĄDA KURS?</strong><br>
-📅 SPOTKANIA NA ŻYWO (SOBOTY)<br>
-<br>
-Spotkanie zapoznawcze<br>
-06.03.2026 — 1 godzina<br>
-Ustalamy zasady, plan działania i sposób pracy<br>
-9 spotkań intensywnych (po 3 godziny):<br>
-07.03 • 14.03 • 21.03 • 28.03<br>
-04.04 • 11.04 • 18.04 • 25.04 • 02.05<br>
-<br>
-⏰ STRUKTURA ZAJĘĆ<br>
-Każde spotkanie to 3 intensywne bloki po 60 minut:<br>
-● 8:00–9:00<br>
-● 9:10–10:10<br>
-● 10:20–11:20<br>
-<br>
-Między blokami — krótkie przerwy, zero nudy, maksimum skupienia.<br>
-<br>
-🎯 CEL JEST JEDEN<br>
-Zdana matura podstawowa z języka angielskiego.<br>
-- bez chaosu<br>
-- bez odkładania na jutro<br>
-- z jasnym planem i realnym wsparciem<br>
-<br>
-Inwestycja w program: 3 997 zł lub 3 dogodne raty` 
+          Intensywny kurs premium – OSTATNI PROGRAM RATUNKOWY<br>
+          PRZED MATURĄ<br>
+          9 tygodni. 59 dni pracy. Jeden cel: ZDANA MATURA.<br>
+          <br>
+          <strong>DLACZEGO TO JEST KURS PREMIUM?</strong>
+          Pracujemy na Twój sukces przez 59 dni.<br>
+          W trakcie kursu otrzymujesz:<br>
+          🔥 regularne zadania do pracy własnej<br>
+          🔥 codzienne wsparcie motywacyjne i emocjonalne<br>
+          🔥 kontrolę systematyczności<br>
+          🔥 realną pracę pod zadania maturalne<br>
+          Dostajesz dostęp do zamkniętej grupy na Telegramie, gdzie:<br>
+          ● codziennie raportujesz wykonane zadania<br>
+          ● dostajesz motywację i przypomnienia<br>
+          ● nie jesteś sam z nauką<br>
+          <br>
+          <strong>DLA KOGO JEST TEN KURS?</strong><br>
+          Dla osób, które:<br>
+          ✔ są na ostatniej prostej przed maturą<br>
+          ✔ czują, że same nie dowiozą systematyczności<br>
+          ✔ potrzebują konkretnego planu + motywacyjnego kopniaka<br>
+          ✔ chcą zdać maturę podstawową, a nie „liczyć na szczęście”<br>
+          <br>
+          <strong>JAK WYGLĄDA KURS?</strong><br>
+          📅 SPOTKANIA W SOBOTY (ONLINE)<br>
+          <br>
+          Spotkanie zapoznawcze<br>
+          06.03.2026 — 1 godzina<br>
+          Ustalamy zasady, plan działania i sposób pracy<br>
+          9 spotkań intensywnych (po 3 godziny):<br>
+          07.03 • 14.03 • 21.03 • 28.03<br>
+          04.04 • 11.04 • 18.04 • 25.04 • 02.05<br>
+          <br>
+          ⏰ STRUKTURA ZAJĘĆ<br>
+          Każde spotkanie to 3 intensywne bloki po 60 minut:<br>
+          ● 8:00–9:00<br>
+          ● 9:10–10:10<br>
+          ● 10:20–11:20<br>
+          <br>
+          Między blokami — krótkie przerwy, zero nudy, maksimum skupienia.<br>
+          <br>
+          🎯 CEL JEST JEDEN<br>
+          Zdana matura podstawowa z języka angielskiego.<br>
+          - bez chaosu<br>
+          - bez odkładania na jutro<br>
+          - z jasnym planem i realnym wsparciem<br>
+          <br>
+          Inwestycja w program: 3 997 zł lub 3 dogodne raty` 
     },
     
     en: {
