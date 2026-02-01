@@ -4,11 +4,19 @@ const popupContainer = document.querySelector(".popup-container");
 const skipButton = document.querySelector(".popup-container .skip-button");
 
 if (skipButton) {
+  // legacy handler (keeps previous behaviour if element exists)
   skipButton.addEventListener("click", () => {
-    popupOverlay.classList.add("active");
+    popupOverlay.style.display = 'flex';
     popupContainer.classList.add("active");
   });
 }
+
+// Close button inside popup
+const popupClose = document.querySelector('.popup-close');
+if (popupClose) popupClose.addEventListener('click', closePopup);
+
+// prevent clicks inside the container from closing the popup
+if (popupContainer) popupContainer.addEventListener('click', (e) => e.stopPropagation());
 
 function closePopup() {
   popupOverlay.style.display = "none";
