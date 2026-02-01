@@ -182,7 +182,7 @@
           PRZED MATURĄ<br>
           9 tygodni. 59 dni pracy. Jeden cel: ZDANA MATURA.<br>
           <br>
-          <strong>DLACZEGO TO JEST KURS PREMIUM?</strong>
+          <strong>DLACZEGO TO JEST KURS PREMIUM?</strong><br>
           Pracujemy na Twój sukces przez 59 dni.<br>
           W trakcie kursu otrzymujesz:<br>
           🔥 regularne zadania do pracy własnej<br>
@@ -239,7 +239,7 @@
         </div>
 
         <!-- FORMULARZ -->
-  <form class="matura-form" action="mailto:sistarsschool@gmail.com" method="post" enctype="text/plain">
+  <form class="matura-form" action="https://formspree.io/f/mdadgrjo" method="POST">
           <fieldset>
             <legend>Dane opiekuna</legend>
             <label for="guardian-name">Imię i nazwisko opiekuna prawnego</label>
@@ -527,41 +527,48 @@
   <script src="./lang-switcher.js" defer></script>
 
   <script>
-    // Build a mailto submission so form data is sent to sistarsschool@gmail.com
+    // Submit matura form to Formspree endpoint via AJAX to avoid opening user's mail client
     document.addEventListener('DOMContentLoaded', function () {
       const form = document.querySelector('.matura-form');
       if (!form) return;
+
       form.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        const to = 'sistarsschool@gmail.com';
-        const subject = encodeURIComponent('Zgłoszenie: Last Call for Matura');
+        // disable submit to prevent double sends
+        const submitButton = form.querySelector('button[type="submit"]');
+        if (submitButton) submitButton.disabled = true;
 
-        const get = id => (form[id] && form[id].value) ? form[id].value.trim() : '';
+        // remove any previous feedback messages
+        const prev = form.parentNode.querySelector('.form-success, .form-error');
+        if (prev) prev.remove();
 
-        const guardianName = get('guardian_name');
-        const guardianEmail = get('guardian_email');
-        const guardianPhone = get('guardian_phone');
-        const studentName = get('student_name');
-        const studentEmail = get('student_email');
-        const studentPhone = get('student_phone');
+        const data = new FormData(form);
 
-        const payments = Array.from(form.querySelectorAll('input[name="payment[]"]:checked'))
-          .map(i => i.value)
-          .join(', ');
-
-        let body = '';
-        body += `Imię i nazwisko opiekuna: ${guardianName}\r\n`;
-        body += `E-mail opiekuna: ${guardianEmail}\r\n`;
-        body += `Telefon opiekuna: ${guardianPhone}\r\n\r\n`;
-        body += `Imię i nazwisko ucznia: ${studentName}\r\n`;
-        body += `E-mail ucznia: ${studentEmail}\r\n`;
-        body += `Telefon ucznia: ${studentPhone}\r\n\r\n`;
-        body += `Preferowana forma płatności: ${payments || 'Brak'}\r\n`;
-
-        const mailto = `mailto:${to}?subject=${subject}&body=${encodeURIComponent(body)}`;
-        // open user's email client
-        window.location.href = mailto;
+        fetch('https://formspree.io/f/mdadgrjo', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: data
+        }).then(response => {
+          if (response.ok) return response.json();
+          return response.json().then(err => Promise.reject(err));
+        }).then(() => {
+          const msg = document.createElement('div');
+          msg.className = 'form-success';
+          msg.style.cssText = 'background:#e6ffed;border:1px solid #87d69f;padding:12px;margin-top:12px;color:#064a34;border-radius:6px;';
+          msg.textContent = 'Dziękujemy — Twoje zgłoszenie zostało wysłane. Skontaktujemy się wkrótce.';
+          form.parentNode.insertBefore(msg, form.nextSibling);
+          form.reset();
+        }).catch((err) => {
+          console.error('Formspree error', err);
+          const msg = document.createElement('div');
+          msg.className = 'form-error';
+          msg.style.cssText = 'background:#ffecec;border:1px solid #e07b7b;padding:12px;margin-top:12px;color:#611111;border-radius:6px;';
+          msg.textContent = 'Wystąpił błąd przy wysyłce formularza. Proszę spróbować ponownie później.';
+          form.parentNode.insertBefore(msg, form.nextSibling);
+        }).finally(() => {
+          if (submitButton) submitButton.disabled = false;
+        });
       });
     });
   </script>
