@@ -86,12 +86,12 @@ translations.ca = translations.ca || {};
   "nav.matura": "Last Call for Matura",
   "matura.title": "Last Call for Matura",
   "matura.desc": `🔔 LAST CALL FOR MATURA with SISTARS<br>
-          Intensywny kurs premium – OSTATNI PROGRAM RATUNKOWY<br>
-          PRZED MATURĄ<br>
-          9 tygodni. 59 dni pracy. Jeden cel: ZDANA MATURA.<br>
+      Intensywny kurs premium – OSTATNI PROGRAM RATUNKOWY<br>
+      PRZED MATURĄ<br>
+      9 tygodni. 27h ONLINE w czasie rzeczywistym. Jeden cel: ZDANA MATURA.<br>
           <br>
-          <strong>DLACZEGO TO JEST KURS PREMIUM?</strong>
-          Pracujemy na Twój sukces przez 59 dni.<br>
+      <strong>DLACZEGO TO JEST KURS PREMIUM?</strong><br>
+      Pracujemy na Twój sukces podczas 9 spotkań (27h) ONLINE w czasie rzeczywistym.<br>
           W trakcie kursu otrzymujesz:<br>
           🔥 regularne zadania do pracy własnej<br>
           🔥 codzienne wsparcie motywacyjne i emocjonalne<br>
