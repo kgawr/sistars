@@ -1,3 +1,4 @@
+/*
 // === POPUP ===
 const popupOverlay = document.querySelector(".popup-overlay");
 const popupContainer = document.querySelector(".popup-container");
@@ -22,6 +23,7 @@ function closePopup() {
   popupOverlay.style.display = "none";
 }
 if (popupOverlay) popupOverlay.addEventListener("click", closePopup);
+*/
 
 // === HAMBURGER MENU ===
 const hamburger = document.querySelector('.hamburger');
